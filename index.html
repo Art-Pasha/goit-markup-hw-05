@@ -44,7 +44,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>                
-                <button type="button" class="btn hero-btn">Order Service</button>
+                <button type="button" class="btn hero-btn" data-modal-open>Order Service</button>
             </div>
         </section>
         <!-- Features -->
@@ -232,13 +232,16 @@
 
                 <ul class="portfolio-list">
                     <li class="portfolio-item">
-                        <img src="./images/banking-app.jpg" 
-                        alt="Banking App mobile screens" 
-                        width="360">
+                        <div class="portfolio-cover-block">
+                            <img src="./images/banking-app.jpg" 
+                            alt="Banking App mobile screens" 
+                            width="360">
+                            <p class="portfolio-overlay"></p>
+                        </div>
                         <div class="portfolio-thumb">
                             <h3 class="portfolio-name">Banking App</h3>
                             <p class="portfolio-type">App</p>
-                        </div>
+                        </div>                        
                     </li>                
                     <li class="portfolio-item">
                         <div class="portfolio-cover-block">
@@ -255,36 +258,48 @@
                         </div>
                     </li>  
                     <li class="portfolio-item">
-                        <img src="./images/meditation-app.jpg" 
-                        alt="Meditation App on laptop and phone screens" 
-                        width="360">
+                        <div class="portfolio-cover-block">
+                            <img src="./images/meditation-app.jpg" 
+                            alt="Meditation App on laptop and phone screens" 
+                            width="360">
+                            <p class="portfolio-overlay"></p>
+                        </div>
                         <div class="portfolio-thumb">
                             <h3 class="portfolio-name">Meditation App</h3>
                             <p class="portfolio-type">App</p>
-                            </div>
+                        </div>
                     </li>            
                     <li class="portfolio-item">
-                        <img src="./images/taxi-service.jpg" 
-                        alt="Taxi Service app in car interior" 
-                        width="360">
+                        <div class="portfolio-cover-block">
+                            <img src="./images/taxi-service.jpg" 
+                            alt="Taxi Service app in car interior" 
+                            width="360">
+                            <p class="portfolio-overlay"></p>
+                        </div>
                         <div class="portfolio-thumb">
                             <h3 class="portfolio-name">Taxi Service</h3>
                             <p class="portfolio-type">Marketing</p>
                         </div>
                     </li>                
                     <li class="portfolio-item">
-                        <img src="./images/screen-illustrations.jpg"
-                        alt="Mobile screen illustrations with moon and futuristic elements" 
-                        width="360">
+                        <div class="portfolio-cover-block">
+                            <img src="./images/screen-illustrations.jpg"
+                            alt="Mobile screen illustrations with moon and futuristic elements" 
+                            width="360">
+                            <p class="portfolio-overlay"></p>
+                        </div>
                         <div class="portfolio-thumb">
                             <h3 class="portfolio-name">Screen Illustrations</h3>
                             <p class="portfolio-type">Design</p>
                         </div>
                     </li>           
                     <li class="portfolio-item"> 
-                        <img src="./images/online-courses.jpg" 
-                        alt="Woman studying online courses outdoors" 
-                        width="360">
+                        <div class="portfolio-cover-block">
+                            <img src="./images/online-courses.jpg" 
+                            alt="Woman studying online courses outdoors" 
+                            width="360">
+                            <p class="portfolio-overlay"></p>
+                        </div>
                         <div class="portfolio-thumb">
                             <h3 class="portfolio-name">Online Courses</h3>
                             <p class="portfolio-type">Marketing</p>
@@ -309,22 +324,22 @@
                 <p class="footer-social-text">Social media</p>
                 <ul class="footer-social-list">
                     <li class="footer-social-item">
-                        <a href="" class="footer-social-link"><svg class="footer-social-icon" width="16" height="16">
+                        <a href="" class="footer-social-link"><svg class="footer-social-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg></a>
                     </li>
                     <li class="footer-social-item">
-                        <a href="" class="footer-social-link"><svg class="footer-social-icon" width="16" height="16">
+                        <a href="" class="footer-social-link"><svg class="footer-social-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg></a>
                     </li>
                     <li class="footer-social-item">
-                        <a href="" class="footer-social-link"><svg class="footer-social-icon" width="16" height="16">
+                        <a href="" class="footer-social-link"><svg class="footer-social-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg></a>
                     </li>
                     <li class="footer-social-item">
-                        <a href="" class="footer-social-link"><svg class="footer-social-icon" width="16" height="16">
+                        <a href="" class="footer-social-link"><svg class="footer-social-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg></a>
                     </li>
@@ -347,9 +362,9 @@
         </div>
     </footer>
     <!-- Modal -->
-    <div class="backdrop is-open">
+    <div class="backdrop" data-modal>
         <div class="modal">
-            <button type="button" class="modal-close-btn">
+            <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="modal-close-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close-black"></use>
                 </svg>
@@ -361,7 +376,7 @@
                     <div class="modal-input-wrapper line-wrapper">
                         <input type="text" name="user-name" id="user-name" class="modal-input">
                         
-                        <svg class="modal-icon" width="18" height="18">
+                        <svg class="modal-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-person-black"></use>
                         </svg>
                         
@@ -372,7 +387,7 @@
                     <label for="user-phone" class="modal-label">Phone</label>
                     <div class="modal-input-wrapper">
                         <input type="tel" name="user-phone" id="user-phone" class="modal-input">
-                        <svg class="modal-icon" width="18" height="18">
+                        <svg class="modal-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-phone-black"></use>
                         </svg>
                     </div>
@@ -382,7 +397,7 @@
                     <label for="user-email" class="modal-label">Email</label>
                     <div class="modal-input-wrapper">
                         <input type="email" name="user-email" id="user-email" class="modal-input">
-                        <svg class="modal-icon" width="18" height="18">
+                        <svg class="modal-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-email-black"></use>
                         </svg>
                     </div>
@@ -411,7 +426,7 @@
             </form>
         </div>
     </div>
-
+<script src="./js/modal.js"></script>
 </body>
 
 </html>
